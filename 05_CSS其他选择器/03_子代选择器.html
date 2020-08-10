@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*选中div 下面的span元素 （直接后代）*/
+        div > span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>span1</span>
+
+    <div>
+        <span>div span</span>
+        <p>
+            <span>div p span</span>
+        </p>
+
+        <div>
+            <span>div div span</span>
+        </div>
+
+        <span>div span 2</span>
+    </div>
+
+    <div>
+        <a href="">
+            <span>
+                div a span
+            </span>
+        </a>
+    </div>
+</body>
+</html>

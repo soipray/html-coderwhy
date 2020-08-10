@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box1 {
+           background-color: green;
+           text-align: center;
+       }
+       .box2 {
+           background-color: red;
+           text-align: center;
+       }
+       .box3 {
+           background-color: blue;
+           text-align: center;
+       }
+       .inner {
+           background-color: yellow;
+           width: 200px;
+           text-align: center;
+           display: inline-block;
+       }
+
+       .box4 {
+           background-color:red;
+           color: #fff;
+           width: 500px;
+           text-align: justify;/*不设置最后一行*/
+           text-align-last: justify;
+       }
+    </style>
+</head>
+<body>
+    <div class="box1">哈哈哈</div>
+    <div class="box2">
+        <img src="../img/bd.png" alt="">
+    </div>
+    <div class="box3">
+        <!--块级元素-->
+        <div class="inner">div</div>
+    </div>
+
+    <!--justify-->
+    <div class="box4">
+        Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World
+        Hello WorldHello WorldHello WorldHello WorldHello WorldHello World
+        Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World
+        Hello WorldHello WorldHello WorldHello 
+    </div>
+</body>
+</html>

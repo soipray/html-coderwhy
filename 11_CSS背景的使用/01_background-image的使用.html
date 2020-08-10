@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 400px;
+            background-color: red;
+
+            /*默认显示第一张 当第一张不可用的时候显示第二张*/
+            background-image: url('../img/bd.png'),url('../img/beef.jpg');
+
+            /*平铺效果 repeat-x repeat-y no-repeat*/
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*样式重置*/
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /*整体样式*/
+        .email {
+            width: 100px;
+            border: 2px solid #999;
+            text-align: center;
+        }
+
+        /*局部 header*/
+        /*.header:hover+ul{
+            display: block;
+        }*/
+        .email:hover ul {
+            display: block;
+        }
+
+        .header {
+            background-color: #999;
+            color: #fff;
+        }
+
+        /*局部 列表*/
+        .email ul {
+            display: none;
+        }
+
+        .email ul li:hover{
+            background-color: skyblue;
+        }
+
+        .email ul li a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--.mail>.header+ul>(li>a[herf=#])*3-->
+    <div class="email">
+        <div class="header">邮箱</div>
+        <ul>
+            <li><a href="" herf="#">QQ邮箱</a></li>
+            <li><a href="" herf="#">163邮箱</a></li>
+            <li><a href="" herf="#">139邮箱</a></li>
+        </ul>
+    </div>
+</body>
+</html>

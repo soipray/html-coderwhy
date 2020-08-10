@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            background-color: red;
+        }
+
+        .inner1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .inner2 {
+            /*float: right;*/
+            /*display: inline-block;*/
+
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        现象解释：
+        1.inner2进行左浮动的时候
+    -->
+    <div class="box">
+        <div class="inner1"></div>
+        <div class="inner2">inner222222</div>
+    </div>
+</body>
+</html>

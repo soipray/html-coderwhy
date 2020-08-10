@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 200px;
+            background-color: red;
+
+            /*1.普通文本*/
+            /*行内元素*/
+            /*行内替换元素*/
+            /*行内块级*/
+            text-align: center;
+        }
+
+        strong {
+            background-color: purple;
+        }
+
+        .ib {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .box2 {
+            height: 200px;
+            background-color: green;
+            
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            /*块级元素*/
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!--普通文本-->
+        div
+
+        <!--行内元素-->
+        <strong>strong</strong>
+
+        <!--行内替换元素-->
+        <img src="../img/bd.png" alt="" width="20" height="20">
+
+        <!--行内块级元素-->
+        <span class="ib">inline block</span>
+    </div>
+    
+    <div class="box2">
+        <div class="block">哈哈</div>
+    </div>
+</body>
+</html>

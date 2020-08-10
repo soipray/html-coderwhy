@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+
+            background-color: #f00;
+        }
+
+        .box .img1 {
+            float: left;
+        }
+
+        .inner {
+            /*浮动元素 定位元素 脱离标准流之后 是脱离标准流的block元素 */
+            float: left;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!--规则三 只在当前行浮动-->
+    <div class="box">
+        国家主席习
+        近平26日晚在北京出席二十国
+        集团领导人应对新冠肺炎特别峰会。习近平
+        <img class="img1" src="../img/baidu.png" alt="">
+        强调，中方支持世界卫生组织发挥领导作用，制定科学合
+        理防控措施，尽力阻止疫情跨境传播。二十国集团应加强
+        <img src="../img/cart.png" alt="">
+        疫情防控信息共享，推广全面系统有效的防控
+        指南，适时举办全球公共卫生安全高级别会议。中
+        <div class="inner"></div>
+        国将同各国一道，加大对相关国际和地区组织的支持力度。
+    </div>
+</body>
+</html>

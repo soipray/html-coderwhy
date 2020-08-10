@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            overflow: hidden;
+            min-width: 1000px;
+        }
+
+        .box img {
+            /*向左移动img宽度一半*/
+            position: relative;
+            /*left: -960px;*/
+
+            /*相对自己左移*/
+            transform: translate(-50%);
+
+            /*向右移动父元素的一半*/
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../img/mhxy.jpg" alt="">
+    </div>
+</body>
+</html>

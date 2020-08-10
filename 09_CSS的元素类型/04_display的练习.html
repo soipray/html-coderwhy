@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*样式重置*/
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0000cc;
+        }
+
+        /*整体样式*/
+        .page ul li {
+            display: inline-block;
+        }
+
+        .page ul li a{
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border: 1px solid #e1e2e3;
+
+            font-size: 14px;
+            /*调整间距*/
+            margin-right: 5px;
+
+            /*居中*/
+            text-align: center;
+            line-height: 34px;
+        }
+
+        .page ul li a:hover {
+            border: 1px solid #38f;
+            background-color: #f2f8ff;
+        }
+
+        .page .prev a , .page .next a {
+            width: 88px;
+        }
+
+        /*点击后的a效果*/
+        .page .active {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+
+            border: none;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .page .active:hover {
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!--.page>ul>(li{$}>a[herf="#"])*12-->
+    <div class="page">
+        <ul>
+            <li class="prev"><a href="" herf="#">&lt;上一页</a></li>
+            <li><a href="" herf="#">1</a></li>
+            <li><a href="" herf="#">2</a></li>
+            <li><a class="active">3</a></li>
+            <li><a href="" herf="#">4</a></li>
+            <li><a href="" herf="#">5</a></li>
+            <li><a href="" herf="#">6</a></li>
+            <li><a href="" herf="#">7</a></li>
+            <li><a href="" herf="#">8</a></li>
+            <li><a href="" herf="#">9</a></li>
+            <li><a href="" herf="#">10</a></li>
+            <li class="next"><a href="" herf="#">下一页&gt;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

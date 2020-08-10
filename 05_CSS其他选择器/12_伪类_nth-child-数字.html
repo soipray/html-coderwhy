@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*任意元素的第三个子元素*/
+        /*:nth-child(3){
+            color: red;
+        }*/
+
+        /*交集选择器 p元素 子元素中的第三个元素*/
+        p:nth-child(3){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>6</p>
+    </div>
+
+    <p></p>
+
+    <div>
+        <strong>1</strong>
+        <strong>3</strong>
+    </div>
+</body>
+</html>

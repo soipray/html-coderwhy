@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  
+            基本层叠：后面一定把前面层叠掉
+            前提使用相同选择器
+            */
+        .box1 {
+            color: red;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .box3 {
+            width: 300px;
+            color: orange;
+        }
+
+        /*给第二个div设置样式*/
+        /*
+            当选择器不同时，就不能按照基本层叠处理
+            权重 !important 10000> 
+            内联样式 1000 > 
+            id选择器 100 > 
+            类 属性选择器 伪类 10>  
+            元素选择器 伪元素 1 > 
+            通配符 0
+        */
+        #main {
+            color: blue;
+        }
+
+        div {
+            color: red;
+        }
+
+        .box {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1 box2 box3">
+        hahaha
+    </div>
+
+    <div id="main" class="box">hhaha </div>
+</body>
+
+</html>

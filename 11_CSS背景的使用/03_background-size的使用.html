@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 800px;
+            height: 500px;
+            background-color: red;
+
+            background-image: url('../img/bd.png');
+            background-repeat: no-repeat;
+
+            /*auto 默认*/
+            /*cover 背景拉伸 覆盖整个元素*/
+            /*contain 拉伸到一个方向占满 保持宽高比*/
+            /*百分比 两个参数 33% 80%*/
+            /*具体大小*/
+            background-size: 200px 200px;
+
+            /*固定取值 10px 10px*/
+            /*水平方向取值 left center right */
+            /*垂直方向取值 top center bottom*/
+            background-position: right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

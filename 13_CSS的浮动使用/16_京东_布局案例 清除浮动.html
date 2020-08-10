@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 990px;
+            background-color: #f00;
+        }
+
+        .wrap {
+            margin-right: -10px;
+        }
+
+        .item {
+            float: left;
+            width: 240px;
+            background-color: orange;
+
+            margin-right: 10px;
+        }
+
+        .itema {
+            height: 306px;
+        }
+
+        .itemb {
+            height: 148px;
+        }
+
+        .itemlast {
+            margin-top: 10px;
+        }
+
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: block;
+
+            /*兼容*/
+            height: 0;
+            visibility: hidden;
+        }
+
+        /*兼容ie*/
+        .clear-fix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clear-fix">
+        <div class="wrap">
+            <div class="item itema"></div>
+            <div class="item itema"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb"></div>
+            <div class="item itemb itemlast"></div>
+            <div class="item itemb itemlast"></div>
+        </div>
+    </div>
+
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+</body>
+
+</html>

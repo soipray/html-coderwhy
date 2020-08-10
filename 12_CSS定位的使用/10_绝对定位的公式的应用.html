@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+
+        .inner {
+            position: absolute;
+            /*完全占据父元素*/
+            /*left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;*/
+
+            /*让内容居中*/
+            height: 100px;
+            width: 100px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto auto;
+
+
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

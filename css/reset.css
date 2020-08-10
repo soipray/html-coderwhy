@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font: 12px/1.5 Helvetica Neue,
+    Helvetica,Arial,Hiragino Sans GB,
+    \5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+}

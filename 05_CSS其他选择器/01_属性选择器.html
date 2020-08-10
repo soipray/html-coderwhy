@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [title] {
+            color: red;
+        }
+
+        [title='divt'] {
+            font-size: 25px;
+        }
+
+        /*title包含t*/
+        [title*='t'] {
+            background-color: #00f;
+        }
+
+        /*title p开头*/
+        [title^='p'] {
+            background-color: #00f;
+            font-style: italic;
+        }
+        /*title 以t结束*/
+        [title$='t'] {
+            line-height: 100px;
+        }
+
+        /*en 或者 en-开头*/
+        [lang|='en'] {
+            line-height: 100px;
+            color: green;
+        }
+
+        /*类选择器*/
+        [class~='divbolang'] {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div lang="en" class="divbolang">div</div>
+    <span title="spant">span</span>
+    <p title="pt">p1</p>
+    <p title="aaa">paaa</p>
+    <p title="pt">p1</p>
+</body>
+</html>
